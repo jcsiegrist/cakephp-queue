@@ -388,7 +388,7 @@ class QueueShell extends AppShell {
 			//$file = $folder . DS . $type . '.txt';
 			//file_put_contents($file, date(FORMAT_DB_DATETIME));
 			$message = $type . ' ' . $pid;
-			CakeLog::write('queue', $message);
+			CakeLog::write('info', $message, 'queue');
 		}
 	}
 
